@@ -60,7 +60,7 @@ public class WorkerResource {
 		
 		logger.info("PORT = " + env.getProperty("local.server.port"));
 		
-		Worker objs = repository.findById(id).get();
-		return ResponseEntity.ok(objs);
+		Worker obj = repository.findById(id).get();
+		return ResponseEntity.ok(obj);
 	}
 }
